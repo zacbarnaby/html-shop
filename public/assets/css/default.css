@@ -3303,18 +3303,36 @@ body {
   margin: 0;
   padding: 0; }
 
+section.pre-header {
+  background: #222538; }
+  section.pre-header ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px; }
+    section.pre-header ul li a {
+      color: #8762c9;
+      text-decoration: none;
+      font-size: 22px;
+      transition: .2s ease-in-out color;
+      vertical-align: middle; }
+      section.pre-header ul li a:hover {
+        color: #5d418f; }
+      section.pre-header ul li a.button {
+        font-size: 14px;
+        color: white; }
+        section.pre-header ul li a.button:hover {
+          color: #00c16e; }
+        section.pre-header ul li a.button i {
+          font-size: 22px;
+          vertical-align: middle;
+          margin-right: 10px;
+          color: #00c16e; }
+
 header {
   padding: 20px; }
-  header h1 {
-    font-weight: 700;
-    font-weight: 18px;
-    text-transform: uppercase; }
-    header h1 a {
-      color: white;
-      text-decoration: none;
-      transition: .2s ease-in-out color; }
-      header h1 a:hover {
-        color: #00c16e; }
+  header img {
+    width: 200px;
+    height: auto; }
   header nav ul {
     text-align: center; }
     header nav ul li {
@@ -3344,12 +3362,39 @@ header {
 section.banner {
   width: 100%;
   height: 400px;
-  background: #8762c9;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23aa7cfb' fill-opacity='0.95'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  margin-bottom: 50px; }
+  background-color: #8762c9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23a680e8' fill-opacity='0.22' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  section.banner h1 {
+    font-size: 64px;
+    font-weight: 800;
+    width: 700px;
+    text-transform: uppercase;
+    margin: 0 auto; }
+  section.banner a {
+    background: #1C1E2E;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #1C1E2E;
+    transition: .1s all ease-in-out;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px; }
+    section.banner a:hover {
+      background: transparent;
+      border-color: #00c16e; }
 
 section.grid {
   width: 100%; }
+  section.grid.last {
+    margin-top: 20px; }
   section.grid .grid-header {
     width: 100%;
     background: #222538;
@@ -3455,3 +3500,106 @@ section.thanks {
     overflow: hidden;
     height: 300px;
     border-radius: 5px; }
+
+section.winners {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  section.winners i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 32px;
+    opacity: 0.4;
+    padding-right: 20px; }
+  section.winners .statistics {
+    display: inline-block;
+    vertical-align: middle; }
+    section.winners .statistics h1 {
+      font-size: 32px;
+      margin: 20px 0 0 0; }
+    section.winners .statistics p {
+      font-size: 18px;
+      color: #00c16e;
+      margin: 0 0 20px 0; }
+
+section.process {
+  background: #8762c9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23a680e8' fill-opacity='0.22' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 40px 0;
+  border-top: 4px solid #00c16e;
+  text-align: center; }
+  section.process .circle {
+    width: 35px;
+    height: 35px;
+    background: #5d418f;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle; }
+    section.process .circle span {
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      top: 6px;
+      left: 1px; }
+  section.process .square {
+    padding: 20px;
+    border-radius: 3px;
+    border: 2px solid #5d418f;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: 15px; }
+    section.process .square i {
+      font-size: 22px;
+      color: white; }
+
+footer {
+  padding: 30px 0 20px 0; }
+  footer img {
+    width: 200px;
+    height: auto; }
+  footer p {
+    font-size: 14px;
+    line-height: 22px; }
+  footer ul.social {
+    padding: 0;
+    margin: 0;
+    text-align: left; }
+    footer ul.social li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 10px; }
+      footer ul.social li a {
+        color: #8762c9;
+        text-decoration: none;
+        font-size: 22px;
+        transition: .2s ease-in-out color;
+        vertical-align: middle; }
+        footer ul.social li a:hover {
+          color: #5d418f; }
+  footer h1 {
+    font-size: 16px;
+    text-align: left; }
+  footer ul {
+    padding: 0;
+    margin: 20px 0 0 0;
+    text-align: left; }
+    footer ul li {
+      list-style: none;
+      padding-bottom: 10px; }
+      footer ul li a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.3);
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left; }
+        footer ul li a:hover {
+          color: #00c16e; }
+
+section.after-footer {
+  background: #222538;
+  border-top: 1px solid #8762c9; }
+  section.after-footer p {
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.3; }
